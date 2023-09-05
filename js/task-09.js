@@ -7,7 +7,8 @@ const widget = document.querySelector(".widget");
 const button = document.querySelector(".change-color");
 
 const changeColor = () => {
-  widget.style.backgroundColor = getRandomHexColor();
+  widget.parentElement.style.backgroundColor = getRandomHexColor();
+  widget.firstElementChild.firstElementChild.textContent = getRandomHexColor();
 };
 
 button.addEventListener("click", changeColor);

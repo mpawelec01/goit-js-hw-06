@@ -4,11 +4,11 @@ const display = document.querySelector("#value");
 const dec = counter.firstElementChild;
 const inc = counter.lastElementChild;
 const decrement = (event) => {
-  counterValue += 1;
+  counterValue -= 1;
   display.innerHTML = counterValue;
 };
 const increment = (event) => {
-  counterValue -= 1;
+  counterValue += 1;
   display.innerHTML = counterValue;
 };
 
